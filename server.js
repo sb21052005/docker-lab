@@ -1,4 +1,10 @@
 const express = require('express');
-console.log('Feature update added');
-console.log('Main branch conflicting update');
-// New feature
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('ShopEasy App is running!');
+});
+
+app.listen(8080, () => {
+  console.log('Server running on port 8080');
+});
